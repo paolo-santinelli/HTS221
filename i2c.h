@@ -28,12 +28,12 @@ typedef struct
 } i2c_transaction;
 
 uint16_t initI2Cx(i2c_transaction *data);
-int i2c_transfer(i2c_transaction *data);
-void HAL_I2C_MasterRxCpltCallbackI2C2(I2C_HandleTypeDef * hi2c);
-void HAL_I2C_MasterTxCpltCallbackI2C2(I2C_HandleTypeDef * hi2c);
+int 	 i2c_transfer(i2c_transaction *data);
+void 	 HAL_I2C_MasterRxCpltCallbackI2C2(I2C_HandleTypeDef * hi2c);
+void 	 HAL_I2C_MasterTxCpltCallbackI2C2(I2C_HandleTypeDef * hi2c);
 
-void HAL_I2C_MasterRxCpltCallbackI2C1(I2C_HandleTypeDef * hi2c);
-void HAL_I2C_MasterTxCpltCallbackI2C1(I2C_HandleTypeDef * hi2c);
+void 	 HAL_I2C_MasterRxCpltCallbackI2C1(I2C_HandleTypeDef * hi2c);
+void 	 HAL_I2C_MasterTxCpltCallbackI2C1(I2C_HandleTypeDef * hi2c);
 
 
 #endif /* FERMILIB_I2C_H_ */
